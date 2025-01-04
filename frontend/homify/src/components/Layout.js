@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Outlet,Link } from "react-router-dom";
 import TopNavbar from './TopNavbar'
 import SideNavbar,{ SidebarItem } from './SideNavbar'
 import { LayoutDashboard, Home, StickyNote, Layers, Flag, Calendar, LifeBuoy, Settings } from "lucide-react";
@@ -28,7 +28,7 @@ function Layout({ children }) {
 
       {/* Main Content */}
       <main className="flex-grow bg-gray-100">      
-        {children}
+      <Outlet />
       </main>
     </div>
     </div>
