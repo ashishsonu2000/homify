@@ -10,8 +10,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import request.SignUpRequest;
-import request.SigninRequest;
+import com.mysociety.request.SignUpRequest;
+import com.mysociety.request.SigninRequest;
 
 @Service
 @RequiredArgsConstructor

@@ -27,7 +27,7 @@ function Layout({ children }) {
       </div>
 
       {/* Main Content */}
-      <main className="flex-grow bg-gray-100">      
+      <main className="flex-grow bg-gray-200 overflow-y-auto overflow-scroll">      
       <Outlet />
       </main>
     </div>

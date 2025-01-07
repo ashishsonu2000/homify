@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 
 import lombok.RequiredArgsConstructor;
-import request.SignUpRequest;
-import request.SigninRequest;
+import com.mysociety.request.SignUpRequest;
+import com.mysociety.request.SigninRequest;
 
 @RestController
 @RequestMapping("/api/v1/auth")

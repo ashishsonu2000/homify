@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Chart from 'react-apexcharts'
 
-function DashboardChart() {
+function DashboardChart({width,height,type}) {
 
   const [chartData , setChartData] = useState()
 
@@ -31,8 +31,8 @@ function DashboardChart() {
       }) } ,[]);
   
   return (
-    <div>
-      <Chart type="line" options={{colors:'ff000'}} series={[
+    <div className='flex w-11/12'>
+      <Chart type={type} options={{colors:'ff000'}} series={[
         { name: "Expense",
           data: [30, 40, 45, 50, 49, 60, 70, 91],
           color:'#0d25d6'
@@ -41,7 +41,7 @@ function DashboardChart() {
             data: [31, 42, 48, 50, 49, 60, 70, 91],
             color:'#dd0'
             },
-            ]} width={500} height={320}> </Chart>
+            ]} width={width} height={height}> </Chart>
     </div>
   )
 }
